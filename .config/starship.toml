@@ -1,40 +1,35 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """  \ 
--▶ \
+$directory$kubernetes $aws $git_branch$git_status
+\n   -▶ \
 """
 
 #right_format = '$kubernetes'
-add_newline = false
+add_newline = true
 
 [character]
 disabled = true
 
 [directory]
 style = 'white'
-truncation_length = 0
-home_symbol = ""
+truncation_length = 3
+home_symbol = "~"
+truncate_to_repo = false
 
 [aws]
-format = '\([($profile) ($region)]($style)\) '
-style = 'white'
+format = '(\(aws:[$profile]($style)\))'
+style = '#ffff36'
 
 [git_branch]
-format = '\[[$symbol$branch]($style)\]'
+format = '\([$symbol$branch]($style)\)'
+style = '#ffff36'
 
 [git_status]
-format = '([\[$all_status$ahead_behind\]]($style))'
-
-
-[status]
-format = '[$symbol$status]($style) '
-symbol = '✗ '
-style = 'red'
-disabled = false
-# only show when code != 0
-pipestatus = false
+format = '((\[$modified$staged\])($style))'
+modified = '*'
 
 [kubernetes]
-format = '\[[$symbol$context( \($namespace\))]($style)\]'
-style = 'white'
+format = '\(k8s:[$context( \($namespace\))]($style)\)'
+style = '#ffff36'
 disabled = false
