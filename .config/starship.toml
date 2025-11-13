@@ -12,7 +12,7 @@ add_newline = true
 disabled = true
 
 [directory]
-style = 'white'
+#style = 'white'
 truncation_length = 3
 home_symbol = "~"
 truncate_to_repo = false
@@ -27,7 +27,7 @@ format = '\([$symbol$branch]($style)\)'
 style = '#ffff36'
 
 [git_status]
-format = '\[[$modified$staged]($style)\]'
+format = '(\[[$modified$staged]($style)\])'
 modified = '*'
 style = '#0fc3ff'
 
