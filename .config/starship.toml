@@ -2,7 +2,7 @@
 
 format = """  \ 
 $directory$kubernetes $aws $git_branch$git_status
-\n   -▶ \
+\n    ━▶ \
 """
 
 #right_format = '$kubernetes'
@@ -19,7 +19,8 @@ truncate_to_repo = false
 
 [aws]
 format = '(\(aws:[$profile]($style)\))'
-style = '#ffff36'
+#style = '#ffff36'
+style = 'white'
 
 [git_branch]
 format = '\([$symbol$branch]($style)\)'
@@ -31,5 +32,6 @@ modified = '*'
 
 [kubernetes]
 format = '\(k8s:[$context( \($namespace\))]($style)\)'
-style = '#ffff36'
+#style = '#ffff36'
+style = 'white'
 disabled = false
