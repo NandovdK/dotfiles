@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """  \ 
-$directory$kubernetes $aws $git_branch$git_status
+$directory$kubernetes$aws$git_branch$git_status
 \n    ━▶ \
 """
 
@@ -18,7 +18,7 @@ home_symbol = "~"
 truncate_to_repo = false
 
 [aws]
-format = '(\(aws:[$profile]($style)\))'
+format = '(\(aws:[$profile]($style)\)) '
 #style = '#ffff36'
 style = 'white'
 
@@ -32,7 +32,7 @@ modified = '*'
 style = '#0fc3ff'
 
 [kubernetes]
-format = '\(k8s:[$context( \($namespace\))]($style)\)'
+format = '\(k8s:[$context( \($namespace\))]($style)\) '
 #style = '#ffff36'
 style = 'white'
 disabled = false
