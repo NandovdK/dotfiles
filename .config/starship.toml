@@ -27,8 +27,9 @@ format = '\([$symbol$branch]($style)\)'
 style = '#ffff36'
 
 [git_status]
-format = '((\[$modified$staged\])($style))'
+format = '\[[$modified$staged]($style)\]'
 modified = '*'
+style = '#0fc3ff'
 
 [kubernetes]
 format = '\(k8s:[$context( \($namespace\))]($style)\)'
