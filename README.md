@@ -1,4 +1,4 @@
 # dotfiles
-My dotfiles, work in progress.
+My dotfiles, work in progress. 
 
 Neovim config: https://github.com/NandovdK/nvim
