@@ -1,4 +1,6 @@
 # dotfiles
-My dotfiles, work in progress. 
 
-Neovim config: https://github.com/NandovdK/nvim
+My configuration, still a work in progess. These dotfiles are managed with [Stow](https://www.gnu.org/software/stow/)
+I'm using this configuration on both MacOS and Windows (with WSL2 integration)
+
+You might be interested in my neovim config. That can be found [here](https://github.com/NandovdK/nvim).
