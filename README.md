@@ -12,8 +12,7 @@ My personal macOS configuration, managed with [GNU Stow](https://www.gnu.org/sof
 | `neovim` | Neovim editor config |
 | `fastfetch` | System info display |
 | `starship` | Shell prompt |
-| `tmux` | Terminal multiplexer |
-| `wezterm` | Terminal emulator |
+| `wezterm` | Terminal emulator & multiplexer |
 | `zshrc` | Zsh shell config |
 | `homebrew` | Homebrew packages |
 
@@ -27,6 +26,7 @@ My personal macOS configuration, managed with [GNU Stow](https://www.gnu.org/sof
 ### Install
 
 Clone the repo and stow whichever configs you want:
+Repo should be cloned in your home directory, otherwise stow won't work correctly.
 
 ```zsh
 git clone https://github.com/NandovdK/dotfiles.git ~/dotfiles
