@@ -68,6 +68,16 @@ config.keys = {
 		mods = "LEADER",
 		action = w.action.ActivateCopyMode,
 	},
+	{
+		key = "t",
+		mods = "LEADER",
+		action = w.action.PromptInputLine({
+			description = "Rename Tab",
+			action = w.action_callback(function(window, pane, line)
+				window:active_tab():set_title(line)
+			end),
+		}),
+	},
 }
 
 smart_splits.apply_to_config(config)
