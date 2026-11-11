@@ -24,7 +24,7 @@ alias gst="git status"
 alias note="nvim ~/notes.md"
 alias unfuck="git reset --soft HEAD~1"
 
-export KUBECONFIG="~/.kube/config"
+export KUBECONFIG=~/.kube/config
 export EDITOR="nvim"
 export NVM_DIR="$(brew --prefix nvm)"
 export AWS_PAGER=""
